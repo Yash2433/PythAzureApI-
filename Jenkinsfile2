@@ -3,7 +3,7 @@ pipeline {
     environment {
         AZURE_CREDENTIALS_ID = 'azure-service-principal'
         RESOURCE_GROUP = 'python-webapp-rg'
-        APP_SERVICE_NAME = 'PythAzureApI'
+        APP_SERVICE_NAME = 'python-webapp-demo'
     }
 
     stages {
