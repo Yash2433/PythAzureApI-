@@ -3,7 +3,8 @@ pipeline {
     environment {
         AZURE_CREDENTIALS_ID = 'azure-service-principal'
         RESOURCE_GROUP = 'rg-jenkins'
-        APP_SERVICE_NAME = 'PythAzureApI'
+        APP_SERVICE_NAME = 'PythAzureApI''
+    }
 
     stages {
         stage('Checkout Code') {
@@ -39,5 +40,4 @@ pipeline {
             echo 'Deployment Failed!'
         }
     }
-}
 }
