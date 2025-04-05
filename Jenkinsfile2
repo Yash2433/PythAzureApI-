@@ -14,12 +14,13 @@ pipeline {
         }
 
         stage('Build') {
-            steps {
-                bat 'python -m venv venv'
-                bat '.\\venv\\Scripts\\activate && pip install --upgrade pip'
-                bat '.\\venv\\Scripts\\activate && pip install -r requirements.txt'
-            }
-        }
+    steps {
+        bat 'C:\\Python311\\python.exe -m venv venv'
+        bat '.\\venv\\Scripts\\activate && C:\\Users\\yashd\\AppData\\Local\\Microsoft\\WindowsApps\\python.exe -m pip install --upgrade pip'
+        bat '.\\venv\\Scripts\\activate && C:\\Users\\yashd\\AppData\\Local\\Microsoft\\WindowsApps\\python.exe -m pip install -r requirements.txt'
+    }
+}
+
 
         stage('Package') {
             steps {
